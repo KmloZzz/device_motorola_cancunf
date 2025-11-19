@@ -242,7 +242,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
     }
 
     private void launchCamera() {
-        final Intent intent = new Intent(lineageos.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
         doHapticFeedback();
